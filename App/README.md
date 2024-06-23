@@ -1,6 +1,9 @@
 # Código do Aplicativo
 
-Este diretório contém o aplicativo em três formatos:
+O aplicativo foi desenvolvido usando, exclusivamente, o [MIT App
+Inventor](https://appinventor.mit.edu/). Nessa plataforma, o desenvolvimento do
+código foi feito em blocos, e os artefatos nesse diretório foram gerados
+automaticamente pelo App Inventor em três formatos:
 
  1. **[APK](jogo_da_velha.apk):** este é o [formato
     padrão](https://developer.android.com/studio/intro/index.html?hl=pt-br)
