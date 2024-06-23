@@ -1,25 +1,25 @@
-# TÍTULO DO PROJETO
+# Jogo da Velha Automático
 
-`CAMPUS/UNIDADE`
+`PUC Minas — Unidade Praça da Liberdade`
 
-`CURSO`
+`Engenharia de Computação`
 
-`SEMESTRE`
+`2024/1 (1º Período)`
 
-`DISCIPLINA`
+`Laboratório de Introdução à Engenharia de Computação`
 
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-* Nome completo do aluno 5
+* Amanda Canizela Guimarães
+* Antonella de Paula Menegaz
+* Felipe de Faria Rios Coelho
+* Lucas Alvarenga Fernandes
+* Lucca Mendes Alves Pellegrini
 
 ## Orientador
 
-* Nome completo do professor 1
+*  Felipe Augusto Lara Soares
 
 ## Resumo
 
