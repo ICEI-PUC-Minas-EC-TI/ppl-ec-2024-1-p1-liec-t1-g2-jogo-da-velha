@@ -8,22 +8,38 @@
 
 `Laboratório de Introdução à Engenharia de Computação`
 
-
 ## Integrantes
 
-* Amanda Canizela Guimarães
-* Antonella de Paula Menegaz
-* Felipe de Faria Rios Coelho
-* Lucas Alvarenga Fernandes
-* Lucca Mendes Alves Pellegrini
+- Amanda Canizela Guimarães
+- Antonella de Paula Menegaz
+- Felipe de Faria Rios Coelho
+- Lucas Alvarenga Fernandes
+- Lucca Mendes Alves Pellegrini
 
 ## Orientador
 
-*  Felipe Augusto Lara Soares
+- Felipe Augusto Lara Soares
 
 ## Resumo
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+![Apresentação do Projeto](Apresentacao/Figuras/apresentação_caixa.jpg)
+
+Este repositório contém a apresentação, o código, e a documentação do projeto
+“Jogo da Velha Automático”, desenvolvido no primeiro período do curso de
+Engenharia de Computação da PUC Minas Praça da Liberdade. O projeto é
+constituído por uma montagem (veja a figura acima) contando com uma matriz de
+nove LEDs e dois botões, governados por um microcontrolador [DevKit
+ESP32](https://www.espressif.com/en/products/socs/esp32). Trata-se de uma
+implementação do [Jogo da Velha](https://pt.wikipedia.org/wiki/Jogo_da_velha),
+opcionalmente controlada por um aplicativo de smartphone via Bluetooth ou por
+um computador via USB.
+
+O projeto conta com dois modos de jogo: jogador contra jogador, e jogador
+contra computador. No primeiro desses, os jogadores definem entre si quem
+jogará primeiro. Já no segundo modo, o usuário tem a opção de escolher quem vai
+jogar primeiro, e de selecionar um de três níveis de dificuldade; isso pode ser
+feito pelo aplicativo de smartphone, que conta com um placar para registrar a
+pontuação, ou pelo computador, com uma conexão USB.
 
 # Código (do arduino ou esp32)
 
@@ -44,7 +60,6 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 
 <li><a href="Manual/manual de utilização.md"> Manual de Utilização</a></li>
 
-
 # Documentação
 
 <ol>
@@ -55,4 +70,3 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 <li><a href="Documentacao/05-Conclusão.md"> Conclusão </a></li>
 <li><a href="Documentacao/06-Referências.md"> Referências </a></li>
 </ol>
-
