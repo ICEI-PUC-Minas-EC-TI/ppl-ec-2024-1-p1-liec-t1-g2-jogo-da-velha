@@ -46,9 +46,10 @@ pontuação, ou pelo computador, com uma conexão USB.
 O código fonte está [aqui](Codigo), e foi desenvolvido usando
 [PlatformIO](https://platformio.org/).
 
-# Aplicativo para Smartphone
+# [Aplicativo para Smartphone](App/README.md)
 
-<li><a href="App/README.md"> Aplicativo </a></li>
+O aplicativo está [aqui](App), e foi desenvolvido usando o [MIT App
+Inventor](https://appinventor.mit.edu/).
 
 # Apresentação
 
