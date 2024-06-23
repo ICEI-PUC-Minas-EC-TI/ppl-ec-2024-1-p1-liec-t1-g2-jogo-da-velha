@@ -41,9 +41,10 @@ jogar primeiro, e de selecionar um de três níveis de dificuldade; isso pode se
 feito pelo aplicativo de smartphone, que conta com um placar para registrar a
 pontuação, ou pelo computador, com uma conexão USB.
 
-# Código (do arduino ou esp32)
+# [Código Fonte do Microcontrolador](Codigo/README.md)
 
-<li><a href="Codigo/README.md"> Código Fonte (.ino)</a></li>
+O código fonte está [aqui](Codigo), e foi desenvolvido usando
+[PlatformIO](https://platformio.org/).
 
 # Aplicativo para Smartphone
 
