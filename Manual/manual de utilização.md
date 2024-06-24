@@ -8,7 +8,7 @@ entrada microUSB do microcontrolador ESP32, certificando-se de passar o cabo
 pelo furo na lateral da tampa. Tendo-lo conectado, retorne a tampa à caixa,
 alinhando o corte na lateral com o furo do cabo USB. Finalmente, conecte a
 outra extremidade do cabo a uma fonte de energia. Tome a demonstração
-[aqui](Apresentacao/Vídeos/demo_setup.mkv) como exemplo.
+[aqui](Apresentacao/Vídeos/demo_setup.webm) como exemplo.
 
 Feito isso, o dispositivo irá ligar e, a menos que o usuário aperte algum
 botão, um jogo começará com as configurações padrão. Para desligar, desconecte
