@@ -16,4 +16,26 @@ partida, os LEDs que correspondem ao usuário piscam, indicando sua vitória.
 
 ## Setup Bluetooth, jogo difícil, e jogo multiplayer
 
+Este vídeo demonstra o processo de conexão Bluetooth e de configuração do jogo.
+Primeiro, o usuário conecta o dispositivo na fonte e, quando a animação inicial
+termina, o botão esquerdo está pressionado, o que habilita o modo Bluetooth; os
+LEDs piscam duas vezes na cor verde, indicando justamente isso. Os LEDs verdes,
+então, *rodam* ao redor da matriz, indicando que o dispositivo está esperando
+que a configuração seja terminada no aplicativo.
+
+O usuário, então, já tendo pareado o dispositivo ao seu smartphone nas
+configurações de Bluetooth do sistema, seleciona o botão “Conectar” no
+aplicativo, escolhendo o dispositivo com o nome “O Jogo da Velha” — a mensagem
+“Dispositivo conectado” indica êxito. Feito isso, ele seleciona “Singleplayer”,
+para jogar contra o computador, escolhendo a dificuldade “Difícil”, e decidindo
+que o computador vai jogar primeiro, assim fazendo o placar aparecer, indicando
+que a partida já vai iniciar.
+
+O usuário joga uma partida, demonstrando que, nesse nível de dificuldade, o
+computador consegue punir seus erros com exatidão, sendo vitorioso. O placar
+registra a vitória, e o usuário volta ao menu principal, iniciando um jogo
+entre dois jogadores (“Multiplayer”). Nesse modo de jogo, ambas as cores são
+controladas pelos botões. O usuário também mostra, finalmente, que é possível
+voltar a um jogo em andamento pelo menu inicial.
+
 [Setup Bluetooth](https://github.com/ICEI-PUC-Minas-EC-TI/ppl-ec-2024-1-p1-liec-t1-g2-jogo-da-velha/assets/169660385/b026c042-2a5c-4614-8993-6be413f7cb8c)
