@@ -66,7 +66,11 @@ Um breve manual contendo instruções de setup, configuração, e uso do
 dispositivo se encontra [aqui](Manual).
 
 
-# [Documentação](Documentacao/Documentação.pdf)
+# Documentação
 
-A documentação escrita contendo os detalhes e a cronologia do desenvolvimento
-do projeto está [aqui](Documentacao/Documentação.pdf).
+ 1. [Introdução](Documentacao/01-Introducão.md)
+ 2. [Metodologias Ágeis](Documentacao/02-Metodologias%20Ágeis.md)
+ 3. [Desenvolvimento](Documentacao/03-Desenvolvimento.md)
+ 4. [Testes](Documentacao/04-Testes.md)
+ 5. [Conclusão](Documentacao/05-Conclusão.md)
+ 6. [Referências](Documentacao/06-Referências.md)
