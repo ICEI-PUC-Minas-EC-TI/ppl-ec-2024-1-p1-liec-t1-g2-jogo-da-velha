@@ -56,7 +56,7 @@ Inventor](https://appinventor.mit.edu/).
 [Aqui](Apresentacao/README.md), se encontram todas as demonstrações visuais do
 projeto, com explicações.
 
-[Setup Bluetooth](https://github.com/ICEI-PUC-Minas-EC-TI/ppl-ec-2024-1-p1-liec-t1-g2-jogo-da-velha/assets/169660385/b026c042-2a5c-4614-8993-6be413f7cb8c)
+[Setup Inicial](https://github.com/ICEI-PUC-Minas-EC-TI/ppl-ec-2024-1-p1-liec-t1-g2-jogo-da-velha/assets/169660385/9835e238-2499-46d9-83b2-a269165461b0)
 
 # [Manual de Utilização](Manual/README.md)
 
