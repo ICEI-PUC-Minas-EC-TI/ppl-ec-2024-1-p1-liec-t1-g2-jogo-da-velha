@@ -56,9 +56,11 @@ Inventor](https://appinventor.mit.edu/).
 ## Setup inicial e jogo nas configurações padrão
 [Setup Inicial](https://github.com/ICEI-PUC-Minas-EC-TI/ppl-ec-2024-1-p1-liec-t1-g2-jogo-da-velha/assets/169660385/9835e238-2499-46d9-83b2-a269165461b0)
 
-# Manual de Utilização
+# [Manual de Utilização](Manual/README.md)
 
-<li><a href="Manual/manual de utilização.md"> Manual de Utilização</a></li>
+Um breve manual contendo instruções de setup, configuração, e uso do
+dispositivo se encontra [aqui](Manual).
+
 
 # [Documentação](Documentacao/Documentação.pdf)
 
