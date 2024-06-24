@@ -39,7 +39,9 @@ contra computador. No primeiro desses, os jogadores definem entre si quem
 jogará primeiro. Já no segundo modo, o usuário tem a opção de escolher quem vai
 jogar primeiro, e de selecionar um de três níveis de dificuldade; isso pode ser
 feito pelo aplicativo de smartphone, que conta com um placar para registrar a
-pontuação, ou pelo computador, com uma conexão USB.
+pontuação, ou pelo computador, com uma conexão USB. Um terceiro modo de jogo,
+computador contra computador, é incluido como uma opção em situações de
+*debugging.*
 
 # [Código Fonte do Microcontrolador](Codigo/README.md)
 

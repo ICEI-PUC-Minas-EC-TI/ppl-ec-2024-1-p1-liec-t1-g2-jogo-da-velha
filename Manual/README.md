@@ -73,3 +73,24 @@ aplicativo perca a conexão ao dispositivo, pode-se voltar ao menu inicial para
 reestabelecer a conexão e voltar ao jogo, mas não há garantia que o placar
 continuará sincronizado. Veja a segunda demonstração
 [aqui](/Apresentacao/README.md#setup-bluetooth-jogo-dif%C3%ADcil-e-jogo-multiplayer).
+
+
+# Uso Avançado
+
+## Debugging
+
+É possível, ao invés de usar Bluetooth, fazer a configuração do dispositivo com
+uma conexão serial, ao conectar o cabo USB ao computador e, ao terminar a
+animação inicial, manter pressionado o botão direito. Isso exibirá indicadores
+semelhantes aos do modo Bluetooth, descrito acima, mas com LEDs vermelhos. O
+dispositivo ficará ocioso, piscando os LEDs, até que receba uma entrada pela
+porta serial. Quando isso acontecer, as opções de configuração do aplicativo
+serão disponibilizadas na linha de comando do monitor serial, exceto que é
+introduzido um novo modo de jogo, computador vs. computador (_no-player_),
+sendo possível escolher a dificuldade de cada um independentemente.
+
+Essa função só deve ser usada para debugging, pois não conta com a interface de
+jogo do aplicativo, e, ao final de cada partida, não iniciará a próxima
+automáticamente, sendo necessário reconfigurar o jogo cada vez. Para facilitar
+o debugging, entretanto, um desenho em ASCII do tabuleiro será exibido antes e
+depois de cada jogada.
