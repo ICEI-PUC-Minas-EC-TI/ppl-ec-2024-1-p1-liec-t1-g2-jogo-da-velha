@@ -51,12 +51,10 @@ O código fonte está [aqui](Codigo), e foi desenvolvido usando
 O aplicativo está [aqui](App), e foi desenvolvido usando o [MIT App
 Inventor](https://appinventor.mit.edu/).
 
-# Apresentação
+# [Apresentação](Apresentacao/README.md)
 
-<ol>
-<li><a href="Apresentacao/README.md"> Vídeo do Funcionamento</a></li>
-<li><a href="Apresentacao/README.md"> Fotos do Projeto</a></li>
-</ol>
+## Setup Inicial
+[Setup Inicial](https://github.com/ICEI-PUC-Minas-EC-TI/ppl-ec-2024-1-p1-liec-t1-g2-jogo-da-velha/assets/169660385/9835e238-2499-46d9-83b2-a269165461b0)
 
 # Manual de Utilização
 
