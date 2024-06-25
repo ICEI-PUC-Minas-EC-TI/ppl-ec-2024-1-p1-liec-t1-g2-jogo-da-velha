@@ -21,8 +21,8 @@ organizada da seguinte maneira:
    o resto do grupo, assim:
    - **Amanda**: Distribuição das tarefas, escrita da documentação, e montagem
      do projeto.
-   - **Antonella**: Organização e distribuição das tarefas, e organização e
-     escrita da documentação.
+   - **Antonella**: Definição, organização e distribuição das tarefas, e
+     organização e escrita da documentação.
    - **Felipe**: Design e programação do aplicativo.
    - **Lucas**: Orçamento e aquisição dos materiais, e design e montagem do
      projeto.
@@ -40,6 +40,21 @@ organizada da seguinte maneira:
 
 As ferramentas utilizadas no projeto foram:
 
-- Liste aqui as ferramentas utilizadas para desenvolvimento do projeto (como por
-  exemplo: Arduino IDE, APP Inventor, trello e outros). Obs: não é para listar
-  aqui os componentes utilizados.
+- **Organização e divisão de tarefas**: [Trello](https://trello.com/pt-BR).
+- **Design e desenvolvimento do aplicativo**:
+  [MIT _App Inventor_](https://appinventor.mit.edu/).
+- **Programação do microcontrolador**:
+
+  - **Edição do código**: Inicialmente,
+    [Arduino IDE](https://docs.arduino.cc/software/ide/) e
+    [Visual Studio Code](https://code.visualstudio.com/). Depois, para maior
+    flexibilidade e performance, [NeoVim](https://neovim.io/) com
+    [clangd](https://clangd.llvm.org/features) e
+    [clang-format](https://clang.llvm.org/docs/ClangFormat.html).
+  - **Compilação e debugging**:
+    [PlatformIO Core](https://docs.platformio.org/en/latest/core/) e
+    [GNU Make](https://www.gnu.org/software/make/).
+
+- **Escrita da documentação**: [Office 365](https://www.office.com/) e, na
+  revisão, [NeoVim](https://neovim.io/) com
+  [LTeX](https://valentjn.github.io/ltex/) e [Prettier](https://prettier.io/).
