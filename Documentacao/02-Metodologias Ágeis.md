@@ -23,11 +23,12 @@ organizada da seguinte maneira:
      do projeto.
    - **Antonella**: Definição, organização e distribuição das tarefas, e
      organização e escrita da documentação.
-   - **Felipe**: Design e programação do aplicativo.
+   - **Felipe**: Design e programação do aplicativo, e manuntenção do
+     repositório do projeto.
    - **Lucas**: Orçamento e aquisição dos materiais, e design e montagem do
      projeto.
-   - **Lucca**: Organização do código, programação do ESP32, e design e montagem
-     e acabamento do projeto.
+   - **Lucca**: Organização do código, programação do ESP32, design, montagem e
+     acabamento do projeto, e administração do repositório do projeto.
 3. As tarefas foram organizadas no [_Trello_](https://trello.com/pt-BR) pela
    Amanda e pela Antonella.
 4. Com as tarefas divididas e organizadas, iniciamos o desenvolvimento, que está
