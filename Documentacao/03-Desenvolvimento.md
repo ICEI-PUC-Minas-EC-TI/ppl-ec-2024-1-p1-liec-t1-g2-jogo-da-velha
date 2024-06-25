@@ -1,12 +1,14 @@
-
 # Materiais
 
 Os materiais utilizados no projeto foram:
-- Liste os materiais usados no projeto, como Arduino/ESP, sensores, atuadores e outros.
+
+- Liste os materiais usados no projeto, como Arduino/ESP, sensores, atuadores e
+  outros.
 
 # Desenvolvimento
 
-Descreva aqui como foi o desenvolvimento do trabalho, destacando cada uma das etapas necessárias para chegar até a solução final.
+Descreva aqui como foi o desenvolvimento do trabalho, destacando cada uma das
+etapas necessárias para chegar até a solução final.
 
 ## Desenvolvimento do Aplicativo
 
