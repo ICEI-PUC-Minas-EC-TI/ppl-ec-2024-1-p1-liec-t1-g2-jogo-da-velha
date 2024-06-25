@@ -1,11 +1,20 @@
-# Materiais
+# Desenvolvimento
+
+## Materiais
 
 Os materiais utilizados no projeto foram:
 
-- Liste os materiais usados no projeto, como Arduino/ESP, sensores, atuadores e
-  outros.
-
-# Desenvolvimento
+- Um microcontrolador
+  [DevKit ESP32 (KS0413)](https://github.com/keyestudio/KS0413-Keyestudio-ESP32-Core-Board-_Black-and-Eco-friendly/blob/master/KS0413.md).
+- Uma protoboard de 830 pontos.
+- Uma caixa de papelão de alta qualidade.
+- Nove LEDs RGB (cátodo comum).
+- Dois Push Buttons 12x12mm com capa amarela.
+- 11 resistores de 1kΩ.
+- 31 jumpers com conectores macho-fêmea.
+- 22 jumpers com conectores macho-macho.
+- Um cabo adaptador USB-A para Micro-USB.
+- Cola quente e Super Bonder.
 
 Descreva aqui como foi o desenvolvimento do trabalho, destacando cada uma das
 etapas necessárias para chegar até a solução final.
