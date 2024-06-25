@@ -47,6 +47,8 @@ vitórias. Tendo dividido assim as telas, determinou-se o layout dos elementos:
 
 ### Código
 
+![Código do aplicativo em blocos](Figuras/blocos.png)
+
 Descreva o desenvolvimento do código do aplicativo.
 
 ## Desenvolvimento do Hardware
