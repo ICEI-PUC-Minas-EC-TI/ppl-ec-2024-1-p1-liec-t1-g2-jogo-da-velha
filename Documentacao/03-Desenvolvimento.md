@@ -120,7 +120,28 @@ final pode ser vista abaixo:
 
 ### Desenvolvimento do Código
 
-Descreva como foi o desenvolvimento do código do arduino/ESP.
+O desenvolvimento do código do microcontrolador foi dividido em duas partes: a
+implementação interna da lógica do jogo, e a implementação dos aspectos
+relacionados ao hardware, como controle de LEDs, leitura de botões, conexão
+serial via USB e Bluetooth, etc.
+
+A primeira parte pode ser resumida assim:
+- Implementação de funções básicas de jogo:
+  ```c
+  bool check_draw(char board[SIZE][SIZE]);
+  bool check_win(char board[SIZE][SIZE], char player);
+  bool make_move(char board[SIZE][SIZE], int row, int col, char player);
+  void init_board(char board[SIZE][SIZE]);
+  void print_board(char board[SIZE][SIZE]);
+  ```
+- Implementação do jogador controlado pelo microcontrolador:
+  ```c
+  void cpu_move(char board[SIZE][SIZE], char player, Difficulty difficulty);
+  static void medium_move(char board[SIZE][SIZE], char player);
+  static void hard_move(char board[SIZE][SIZE], char player);
+  static int minimax(char board[SIZE][SIZE], bool is_maximizing, char player,
+         char opponent);
+  ```
 
 ## Comunicação entre App e Hardware
 
