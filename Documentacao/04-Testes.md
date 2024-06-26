@@ -75,3 +75,19 @@ _cursor_ sobre cada jogada possível, e outro para confirmar a seleção.
 Conectando os dois botões e comprovando que funcionavam, terminamos a maior
 parte do código, faltando apenas implementar a conexão Bluetooth quando o
 aplicativo estivesse pronto.
+
+## Funcionamento do aplicativo
+
+Após implementar um protótipo da interface do aplicativo, usando diferentes
+_telas_ no _App Invetor_ para cada menu, começamos a escrever
+[o código em blocos](03-Desenvolvimento.md#c%C3%B3digo) mas, quando testamos o
+cliente Bluetooth, percebemos que não era possível enviar nem receber mensagens
+ao microcontrolador, exceto no menu principal. Ao investigar a documentação do
+_App Inventor_, descobrimos que os eventos de elementos no layout de uma tela
+não podem ser acessados no código de outra tela e, como o cliente Bluetooth é um
+elemento de layout, ele está fora de escopo nas outras telas. Para consertar
+isso, foi necessário refatorar a estrutura do aplicativo, implementando os
+diferemtes menus como “pseudo-telas”, que na verdade são arranjos verticais.
+Para mudar de um menu para o outro, implementamos procedimentos que tornariam
+cada arranjo visível ou invisível, conforme necessário. Assim, o cliente
+Bluetooth está sempre em escopo, e o problema é resolvido.
