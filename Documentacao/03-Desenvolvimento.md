@@ -11,8 +11,8 @@ Os materiais utilizados no projeto foram:
 - Uma protoboard de 830 pontos.
 - Uma caixa de papelão de alta qualidade.
 - Nove LEDs RGB (cátodo comum).
-- Dois Push Buttons 12x12mm com capa amarela.
-- 11 resistores de 1kΩ.
+- Dois Push Buttons 12x12 mm com capa amarela.
+- 11 resistores de 1 kΩ.
 - 31 jumpers com conectores macho-fêmea.
 - 22 jumpers com conectores macho-macho.
 - Um cabo adaptador USB-A para Micro-USB.
@@ -38,12 +38,12 @@ vitórias. Tendo dividido assim as telas, determinou-se o layout dos elementos:
 - **Escolha de Jogador**: ao escolher a dificuldade, a terceira tela apresenta
   dois botões, um dos quais fará o computador jogar primeiro, enquanto o outro
   fará com que o usuário jogue primeiro. O mesmo botão de “Voltar ao menu
-  principal” foi incluido, e, aqui, também cancela a configuração do jogo.
+  principal” foi incluído, e, aqui, também cancela a configuração do jogo.
 - **Tela de Jogo**: finalmente, a tela de jogo aparece quando a primeira partida
-  se inicia. Ela conta com um placar de dois números, incialmente zero, para o
+  se inicia. Ela conta com um placar de dois números, inicialmente zero, para o
   primeiro e o segundo jogador (em caso de jogo Multiplayer), ou para o jogador
   e o computador (em caso de jogo Singleplayer). O botão de “Voltar ao menu
-  principal” está aqui também mas, nesse caso, pressioná-lo não cancelará o
+  principal” está aqui também, mas, nesse caso, pressioná-lo não cancelará o
   jogo, pois no menu principal será possível selecionar o botão “Voltar ao
   jogo”. Portanto, o menu principal passa a funcionar como um menu de _pause_.
 
@@ -52,20 +52,20 @@ vitórias. Tendo dividido assim as telas, determinou-se o layout dos elementos:
 Como descrevemos
 [na discussão dos testes](04-Testes.md#funcionamento-do-aplicativo), não foi
 possível implementar as telas do aplicativo como telas próprias do _App
-Inventor_. Por isso foram representadas como `VerticalArrangement`, e a a
-mudança entre as telas é feita tornando cada arranjo visível ou invisível. Para
-cada botão, foi adicionado um bloco determinando qual mudança de tela será
-feita, e qual código numérico será enviado ao microcontrolador via Bluetooth
-quando for pressionado.
+Inventor_. Por isso foram representadas como `VerticalArrangement`, e a mudança
+entre as telas é feita tornando cada arranjo visível ou invisível. Para cada
+botão, foi adicionado um bloco determinando qual mudança de tela será feita, e
+qual código numérico será enviado ao microcontrolador via Bluetooth quando for
+pressionado.
 
 Adicionamos, também, blocos determinando que, ao selecionar o botão “Conectar”,
 os elementos da lista de seleção serão iguais aos endereços e nomes dos
 dispositivos detectados pelo cliente Bluetooth. Ao efetivar, nela, a escolha do
-microcontrolador, um outro bloco executa, realizando a conexão, e mostrando na
-tela uma mensagem indicando se a conexão teve êxito ou não. Finalmente, um bloco
-_Timer_ verifica constantemente se algum código foi recebido do microcontrolador
-via Bluetooth e, se for o caso, guarda o código em uma variável global e,
-dependendo de qual for, realiza procedimento apropriado.
+microcontrolador, outro bloco executa, realizando a conexão, e mostrando na tela
+uma mensagem indicando se a conexão teve êxito ou não. Finalmente, um bloco
+temporizador verifica constantemente se algum código foi recebido do
+microcontrolador via Bluetooth e, se for o caso, guarda o código em uma variável
+global e, dependendo de qual for, realiza procedimento apropriado.
 
 ![Código do aplicativo em blocos](Figuras/blocos.png)
 
@@ -84,7 +84,7 @@ protótipo abaixo:
 
 ![Primeiro protótipo](Figuras/prototipo.jpg)
 
-Deivido à instabilidade da conexão, usamos fita isolante para prender os pinos
+Devido à instabilidade da conexão, usamos fita isolante para prender os pinos
 dos LEDs aos conectores fêmea dos jumpers e garantir que será sempre possível
 fechar o circuito. Como descrito
 [na seção de testes](04-Testes.md#funcionamento-dos-leds), esse protótipo teve
@@ -94,7 +94,7 @@ usando o mesmo padrão de jumpers macho-fêmea, macho-macho, e resistores. Uma v
 instalados, terminamos e testamos extensivamente o código do microcontrolador —
 com exceção da implementação do Bluetooth — e instalamos a montagem na caixa.
 
-Inicialmente, haviamos considerado colar as protoboards (pois não sabíamos se
+Inicialmente, havíamos considerado colar as protoboards (pois não sabíamos se
 apenas uma seria suficiente), usando a fita dupla-face que elas incluem, às
 laterais da parte interna da caixa, mas logo percebemos que seria mais fácil
 utilizar e fazer a manutenção do projeto se a montagem inteira fosse colada à
@@ -105,18 +105,18 @@ componentes e comprovar que seria possível, decidimos fazer isso.
 
 Com lápis e esquadro, então, determinamos as posições da protoboard, de cada
 LED, e dos dois botões com marcações no interior da tampa. Usando uma furadeira,
-fizemos furos de 5mm de diâmetro para cada LED — fazendo com que se encaixassem
+fizemos furos de 5 mm de diâmetro para cada LED — fazendo com que se encaixassem
 com firmeza e facilidade — e quatro furos de tamanho semelhante para os
 conectores fêmea dos jumpers dos botões, firmando os conectores com cola quente
 no lado interno. Além disso, fizemos um furo com diâmetro de aproximadamente
-15mm na lateral da tampa, para a saída do cabo adaptador Micro-USB, e um corte
-correspondente na caixa, para que seja possível tampá-la e destampá-la sem
+15 mm na lateral da tampa, para a saída do cabo adaptador Micro-USB, e um corte
+correspondente na caixa, para ser possível tampá-la e destampá-la sem
 desconectar o cabo.
 
 Com todos os furos feitos, instalamos primeiro os botões, fixando-os com cola
 quente e Super Bonder aos conectores. Depois, colamos a protoboard usando fita
 dupla-face, conectando os jumpers dos botões a ela novamente, e, finalmente,
-encaixamos os LEDs nos furos de 5mm e os fixando com Super Bonder. A montagem
+encaixamos os LEDs nos furos de 5 mm e os fixando com Super Bonder. A montagem
 final pode ser vista abaixo:
 
 ![Instalação da montagem na tampa da caixa](Figuras/instalação_na_caixa.jpg)
@@ -149,7 +149,7 @@ A primeira parte pode ser resumida assim:
          char opponent);
   ```
 
-E a segunda parte, resumidamente, assim:
+E a segunda parte, em suma, assim:
 
 - Definição dos pinos GPIO e definições de cores dos LEDs:
 
@@ -216,7 +216,7 @@ E a segunda parte, resumidamente, assim:
   void get_settings(Options *opt);
   ```
 
-- Implementação da comuinicação via Bluetooth:
+- Implementação da comunicação via Bluetooth:
 
   ```c
   typedef enum {
@@ -252,13 +252,13 @@ E a segunda parte, resumidamente, assim:
   BtAction check_and_handle_bt(void);
   ```
 
-## Comunicação entre App e Hardware
+## Comunicação entre Aplicativo e Hardware
 
 Como indicado acima, a comunicação entre o aplicativo e o microcontrolador foi
 implementada por meio da definição de nove códigos numéricos de oito bits.
 Originalmente, foi considerado definir cada código como uma potência de dois,
-para que fosse possível enviar vários comandos em uma única mensagem de um ou
-mais bytes, usando operações booleanas binárias, como
+para ser possível enviar vários comandos em uma única mensagem de um ou mais
+bytes, usando operações booleanas binárias, como
 `SerialBT.write(MSG_1 | MSG_2 | MSG_3);`, mas, devido ao aumento da complexidade
 que seria necessário no código em blocos do _App Inventor_, essa ideia foi
 descartada. Dos nove comandos, sete são enviados pelo aplicativo, enquanto os

@@ -15,18 +15,18 @@ organizada da seguinte maneira:
 
 ## Processo
 
-1. A equipe se reuniu e definiu a estrutura geral do projeto, incluindo os
-   diferentes modos de jogo e dificuldades disponíveis, as funções e a interface
-   do aplicativo, e a estrutura física do tabuleiro, com o emprego de uma matriz
-   de nove LEDs RGB e de 6 a 10 botões para configuração e controle.
+1. A equipe se reuniu e definiu a estrutura do projeto, incluindo os diferentes
+   modos de jogo e dificuldades disponíveis, as funções e a interface do
+   aplicativo, e a estrutura física do tabuleiro, com o emprego de uma matriz de
+   nove LEDs RGB e de 6 a 10 botões para configuração e controle.
 2. A divisão dos papéis foi feita pela Amanda e pela Antonella, em consulta com
    o resto do grupo, assim:
    - **Amanda**: Distribuição das tarefas, escrita da documentação, e montagem
      do projeto.
    - **Antonella**: Definição, organização e distribuição das tarefas, e
      organização e escrita da documentação.
-   - **Felipe**: Design e programação do aplicativo, e manuntenção do
-     repositório do projeto.
+   - **Felipe**: Design e programação do aplicativo, e manutenção do repositório
+     do projeto.
    - **Lucas**: Orçamento e aquisição dos materiais, e design e montagem do
      projeto.
    - **Lucca**: Organização do código, programação do ESP32, design, montagem e
@@ -51,7 +51,7 @@ As ferramentas utilizadas no projeto foram:
   - **Edição do código**: Inicialmente,
     [Arduino IDE](https://docs.arduino.cc/software/ide/) e
     [Visual Studio Code](https://code.visualstudio.com/). Depois, para maior
-    flexibilidade e performance, [NeoVim](https://neovim.io/) com
+    flexibilidade e desempenho, [NeoVim](https://neovim.io/) com
     [clangd](https://clangd.llvm.org/features) e
     [clang-format](https://clang.llvm.org/docs/ClangFormat.html).
   - **Compilação e debugging**:
