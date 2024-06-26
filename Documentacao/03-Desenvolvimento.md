@@ -81,13 +81,42 @@ protótipo abaixo:
 ![Primeiro protótipo](Figuras/prototipo.jpg)
 
 Deivido à instabilidade da conexão, usamos fita isolante para prender os pinos
-dos LEDs aos conectores fêmeas dos jumpers e garantir que será sempre possível
+dos LEDs aos conectores fêmea dos jumpers e garantir que será sempre possível
 fechar o circuito. Como descrito [na seção de testes](04-Testes.md), esse
 protótipo teve que ser desmontado e refeito. Quando foi comprovado que todos os
 LEDs estavam funcionando e corretamente mapeados no código, adicionamos os Push
 Buttons, usando o mesmo padrão de jumpers macho-fêmea, macho-macho, e
-resistores. Uma vez instalados, terminamos o código do microcontrolador — com
-exceção da implementação do Bluetooth — e instalamos a montagem na caixa.
+resistores. Uma vez instalados, terminamos e testamos extensivamente o código do
+microcontrolador — com exceção da implementação do Bluetooth — e instalamos a
+montagem na caixa.
+
+Inicialmente, haviamos considerado colar as protoboards (pois não sabíamos se
+apenas uma seria suficiente), usando a fita dupla-face que elas incluem, às
+laterais da parte interna da caixa, mas logo percebemos que seria mais fácil
+utilizar e fazer a manutenção do projeto se a montagem inteira fosse colada à
+parte interna da tampa. Isso faria com que fosse conveniente abrir a caixa,
+tanto para fazer manutenção quanto para guardar o manual impresso e o cabo
+Micro-USB, quando não estiver em uso. Após tomar as medidas da tampa e dos
+componentes e comprovar que seria possível, decidimos fazer isso.
+
+Com lápis e esquadro, então, determinamos as posições da protoboard, de cada
+LED, e dos dois botões com marcações no interior da tampa. Usando uma furadeira,
+fizemos furos de 5mm de diâmetro para cada LED — fazendo com que se encaixassem
+com firmeza e facilidade — e quatro furos de tamanho semelhante para os
+conectores fêmea dos jumpers dos botões, firmando os conectores com cola quente
+no lado interno. Além disso, fizemos um furo com diâmetro de aproximadamente
+15mm na lateral da tampa, para a saída do cabo adaptador Micro-USB, e um corte
+correspondente na caixa, para que seja possível tampá-la e destampá-la sem
+desconectar o cabo.
+
+Com todos os furos feitos, instalamos primeiro os botões, fixando-os com cola
+quente e Super Bonder aos conectores. Depois, colamos a protoboard usando fita
+dupla-face, conectando os jumpers dos botões a ela novamente, e, finalmente,
+encaixamos os LEDs nos furos de 5mm e os fixando com Super Bonder. A montagem
+final pode ser vista abaixo:
+
+![Instalação da montagem na tampa da caixa](Figuras/instalação_na_caixa.jpg)
+![Montagem terminada](Figuras/caixa_completa.jpg)
 
 ### Desenvolvimento do Código
 
