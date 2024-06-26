@@ -61,7 +61,7 @@ microcontrolador, um outro bloco executa, realizando a conexão, e mostrando na
 tela uma mensagem indicando se a conexão teve êxito ou não. Finalmente, um bloco
 _Timer_ verifica constantemente se algum código foi recebido do microcontrolador
 via Bluetooth e, se for o caso, guarda o código em uma variável global e,
-dependendo de qual for, realizao procedimento apropriado.
+dependendo de qual for, realiza procedimento apropriado.
 
 ![Código do aplicativo em blocos](Figuras/blocos.png)
 
