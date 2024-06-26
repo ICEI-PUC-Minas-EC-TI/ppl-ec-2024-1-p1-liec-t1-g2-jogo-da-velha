@@ -123,7 +123,8 @@ final pode ser vista abaixo:
 O desenvolvimento do código do microcontrolador foi dividido em duas partes: a
 implementação interna da lógica do jogo, e a implementação dos aspectos
 relacionados ao hardware, como controle de LEDs, leitura de botões, conexão
-serial via USB e Bluetooth, etc.
+serial via USB e Bluetooth, etc. A implementação completa do código está
+[aqui](/Codigo).
 
 A primeira parte pode ser resumida assim:
 
