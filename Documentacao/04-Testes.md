@@ -2,10 +2,21 @@
 
 ## Funcionamento dos LEDs
 
-Quando terminamos a montagem do
-[primeiro protótipo](03-Desenvolvimento.md#montagem), decidimos iniciar a
-programação das funções [que controlam os LEDs](/Codigo/src/io.c). Para isso,
-foi necessário antes testar se todos os LEDs estavam funcionando corretamente.
+Inicialmente, fizemos uma montagem preliminar — já tendo escrito
+[a primeira parte](03-Desenvolvimento.md#desenvolvimento-do-c%C3%B3digo) do
+código — com apenas um dos LEDs conectados, para comprovar que podíamos
+controlá-lo. Com o computador que tínhamos conosco, porém, não conseguimos fazer
+o upload de nenhum programa para o microcontrolador, apesar de conseguir
+compilá-lo normalmente. Testamos algumas ferramentes diferentes, como o _Arduino
+IDE_, o _Visual Studio Code_ com plugins, e o _PlatformIO Core_, mas nenhuma
+delas conseguiu fazer o upload do código. Como não tínhamos outro computador
+disponível nesse momento, optamos por terminar a montagem com todos os LEDs,
+supondo que estariam funcionando, e resolver esse problema depois.
+
+Terminando a montagem do [primeiro protótipo](03-Desenvolvimento.md#montagem) e
+usando outro computador, decidimos iniciar a programação das
+[funções que controlam os LEDs](/Codigo/src/io.c). Para isso, seria necessário,
+antes, finalmente comprovar que todos os LEDs estavam funcionando corretamente.
 Ao tentar acender os LEDs, entretanto, notamos que que apenas alguns deles
 estavam funcionando e, mesmo assim, estavam muito fracos. Após muitas horas
 testando, foi só quando verificamos as tensões nos circuitos com um multímetro,
