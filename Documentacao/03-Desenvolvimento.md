@@ -82,7 +82,12 @@ protótipo abaixo:
 
 Deivido à instabilidade da conexão, usamos fita isolante para prender os pinos
 dos LEDs aos conectores fêmeas dos jumpers e garantir que será sempre possível
-fechar o circuito.
+fechar o circuito. Como descrito [na seção de testes](04-Testes.md), esse
+protótipo teve que ser desmontado e refeito. Quando foi comprovado que todos os
+LEDs estavam funcionando e corretamente mapeados no código, adicionamos os Push
+Buttons, usando o mesmo padrão de jumpers macho-fêmea, macho-macho, e
+resistores. Uma vez instalados, terminamos o código do microcontrolador — com
+exceção da implementação do Bluetooth — e instalamos a montagem na caixa.
 
 ### Desenvolvimento do Código
 
