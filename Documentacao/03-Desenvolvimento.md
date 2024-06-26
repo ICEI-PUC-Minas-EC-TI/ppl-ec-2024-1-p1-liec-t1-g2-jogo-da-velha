@@ -47,15 +47,29 @@ vitórias. Tendo dividido assim as telas, determinou-se o layout dos elementos:
 
 ### Código
 
-![Código do aplicativo em blocos](Figuras/blocos.png)
+Como descrevemos [na discussão dos testes](04-Testes.md), não foi possível
+implementar as telas do aplicativo como telas próprias do _App Inventor_. Por
+isso foram representadas como `VerticalArrangement`, e a a mudança entre as
+telas é feita tornando cada arranjo visível ou invisível. Para cada botão, foi
+adicionado um bloco determinando qual mudança de tela será feita, e qual código
+numérico será enviado ao microcontrolador via Bluetooth quando for pressionado.
 
-Descreva o desenvolvimento do código do aplicativo.
+Adicionamos, também, blocos determinando que, ao selecionar o botão “Conectar”,
+os elementos da lista de seleção serão iguais aos endereços e nomes dos
+dispositivos detectados pelo cliente Bluetooth. Ao efetivar, nela, a escolha do
+microcontrolador, um outro bloco executa, realizando a conexão, e mostrando na
+tela uma mensagem indicando se a conexão teve êxito ou não. Finalmente, um
+bloco _Timer_ verifica constantemente se algum código foi recebido do
+microcontrolador via Bluetooth e, se for o caso, guarda o código em uma
+variável global e, dependendo de qual for, realizao procedimento apropriado.
+
+![Código do aplicativo em blocos](Figuras/blocos.png)
 
 ## Desenvolvimento do Hardware
 
 ### Montagem
 
-Descreva como foi o processo da montagem do projeto.
+O primeiro protótipo
 
 ### Desenvolvimento do Código
 
