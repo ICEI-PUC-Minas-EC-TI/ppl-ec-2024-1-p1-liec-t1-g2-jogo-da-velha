@@ -1,3 +1,5 @@
+<!-- LTeX: language=pt-BR -->
+
 # Conclusão
 
 Em suma, o jogo da velha foi desenvolvido com sucesso, apesar das complicações

@@ -1,3 +1,5 @@
+<!-- LTeX: language=pt-BR -->
+
 # Desenvolvimento
 
 ## Materiais

@@ -1,3 +1,5 @@
+<!-- LTeX: language=pt-BR -->
+
 # Jogo da Velha Automático
 
 `PUC Minas — Unidade Praça da Liberdade`

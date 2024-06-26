@@ -1,3 +1,5 @@
+<!-- LTeX: language=pt-BR -->
+
 # Introdução
 
 Este projeto tem como objetivo desenvolver uma aplicação que integra o MIT App

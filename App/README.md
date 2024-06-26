@@ -1,3 +1,5 @@
+<!-- LTeX: language=pt-BR -->
+
 # Código do Aplicativo
 
 O aplicativo foi desenvolvido usando, exclusivamente, o [MIT App

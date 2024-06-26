@@ -1,3 +1,5 @@
+<!-- LTeX: language=pt-BR -->
+
 # Manual de Utilização
 
 ## Como ligar o dispositivo

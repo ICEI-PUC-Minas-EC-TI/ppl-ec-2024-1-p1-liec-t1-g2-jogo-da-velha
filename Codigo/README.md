@@ -1,3 +1,5 @@
+<!-- LTeX: language=pt-BR -->
+
 # Código do ESP32
 
 Esse diretório contém todo o código do microcontrolador (SoC ESP32) escrito

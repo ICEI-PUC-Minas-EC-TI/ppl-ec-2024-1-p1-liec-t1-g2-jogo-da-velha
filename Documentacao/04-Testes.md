@@ -1,3 +1,5 @@
+<!-- LTeX: language=pt-BR -->
+
 # Testes do Projeto
 
 ## Funcionamento dos LEDs

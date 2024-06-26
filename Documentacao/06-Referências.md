@@ -1,3 +1,5 @@
+<!-- LTeX: language=pt-BR -->
+
 # Referências
 
 - RUSSEL, S.; NORVIG, P. _Artificial Intelligence: A Modern Approach, Global

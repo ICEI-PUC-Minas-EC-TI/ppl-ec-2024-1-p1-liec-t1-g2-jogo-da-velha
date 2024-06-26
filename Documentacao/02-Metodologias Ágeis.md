@@ -1,3 +1,5 @@
+<!-- LTeX: language=pt-BR -->
+
 # Metodologia
 
 ## Divisão de Papéis

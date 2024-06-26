@@ -1,3 +1,5 @@
+<!-- LTeX: language=pt-BR -->
+
 # Demonstrações
 
 ## Setup inicial e jogo nas configurações padrão
