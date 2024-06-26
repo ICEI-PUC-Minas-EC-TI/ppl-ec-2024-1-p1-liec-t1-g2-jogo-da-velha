@@ -12,7 +12,7 @@ Os materiais utilizados no projeto foram:
 - Uma caixa de papelão de alta qualidade.
 - Nove LEDs RGB (cátodo comum).
 - Dois Push Buttons 12x12 mm com capa amarela.
-- 11 resistores de 1 kΩ.
+- 11 resistores de 1 KΩ.
 - 31 jumpers com conectores macho-fêmea.
 - 22 jumpers com conectores macho-macho.
 - Um cabo adaptador USB-A para Micro-USB.
