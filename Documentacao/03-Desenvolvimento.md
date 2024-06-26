@@ -58,10 +58,10 @@ Adicionamos, também, blocos determinando que, ao selecionar o botão “Conecta
 os elementos da lista de seleção serão iguais aos endereços e nomes dos
 dispositivos detectados pelo cliente Bluetooth. Ao efetivar, nela, a escolha do
 microcontrolador, um outro bloco executa, realizando a conexão, e mostrando na
-tela uma mensagem indicando se a conexão teve êxito ou não. Finalmente, um
-bloco _Timer_ verifica constantemente se algum código foi recebido do
-microcontrolador via Bluetooth e, se for o caso, guarda o código em uma
-variável global e, dependendo de qual for, realizao procedimento apropriado.
+tela uma mensagem indicando se a conexão teve êxito ou não. Finalmente, um bloco
+_Timer_ verifica constantemente se algum código foi recebido do microcontrolador
+via Bluetooth e, se for o caso, guarda o código em uma variável global e,
+dependendo de qual for, realizao procedimento apropriado.
 
 ![Código do aplicativo em blocos](Figuras/blocos.png)
 
@@ -69,7 +69,20 @@ variável global e, dependendo de qual for, realizao procedimento apropriado.
 
 ### Montagem
 
-O primeiro protótipo
+O primeiro protótipo consistiu de nove LEDs RGB conectados à protoboard com
+ternos de jumpers de conectores macho-fêmea, deixando o pino do diodo azul
+desconectado, pois ele não é necessário. Para o _ground_ de cada LED,
+conectamo-lo por meio de um resistor à linha negativa da protoboard, e para cada
+pino dos diodos verde e vermelhos, conectamo-lo a uma das portas GPIO do
+microcontrolador por meio de jumpers macho-macho. Isso exigiu um número maior de
+jumpers, mas constituiu uma montagem marginalmente mais organizada. Veja o
+protótipo abaixo:
+
+![Primeiro protótipo](Figuras/prototipo.jpg)
+
+Deivido à instabilidade da conexão, usamos fita isolante para prender os pinos
+dos LEDs aos conectores fêmeas dos jumpers e garantir que será sempre possível
+fechar o circuito.
 
 ### Desenvolvimento do Código
 
