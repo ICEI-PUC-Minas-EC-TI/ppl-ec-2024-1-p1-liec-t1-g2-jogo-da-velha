@@ -47,12 +47,14 @@ vitórias. Tendo dividido assim as telas, determinou-se o layout dos elementos:
 
 ### Código
 
-Como descrevemos [na discussão dos testes](04-Testes.md), não foi possível
-implementar as telas do aplicativo como telas próprias do _App Inventor_. Por
-isso foram representadas como `VerticalArrangement`, e a a mudança entre as
-telas é feita tornando cada arranjo visível ou invisível. Para cada botão, foi
-adicionado um bloco determinando qual mudança de tela será feita, e qual código
-numérico será enviado ao microcontrolador via Bluetooth quando for pressionado.
+Como descrevemos
+[na discussão dos testes](04-Testes.md#funcionamento-do-aplicativo), não foi
+possível implementar as telas do aplicativo como telas próprias do _App
+Inventor_. Por isso foram representadas como `VerticalArrangement`, e a a
+mudança entre as telas é feita tornando cada arranjo visível ou invisível. Para
+cada botão, foi adicionado um bloco determinando qual mudança de tela será
+feita, e qual código numérico será enviado ao microcontrolador via Bluetooth
+quando for pressionado.
 
 Adicionamos, também, blocos determinando que, ao selecionar o botão “Conectar”,
 os elementos da lista de seleção serão iguais aos endereços e nomes dos
@@ -82,13 +84,13 @@ protótipo abaixo:
 
 Deivido à instabilidade da conexão, usamos fita isolante para prender os pinos
 dos LEDs aos conectores fêmea dos jumpers e garantir que será sempre possível
-fechar o circuito. Como descrito [na seção de testes](04-Testes.md), esse
-protótipo teve que ser desmontado e refeito. Quando foi comprovado que todos os
-LEDs estavam funcionando e corretamente mapeados no código, adicionamos os Push
-Buttons, usando o mesmo padrão de jumpers macho-fêmea, macho-macho, e
-resistores. Uma vez instalados, terminamos e testamos extensivamente o código do
-microcontrolador — com exceção da implementação do Bluetooth — e instalamos a
-montagem na caixa.
+fechar o circuito. Como descrito
+[na seção de testes](04-Testes.md#funcionamento-dos-leds), esse protótipo teve
+que ser desmontado e refeito. Quando foi comprovado que todos os LEDs estavam
+funcionando e corretamente mapeados no código, adicionamos os Push Buttons,
+usando o mesmo padrão de jumpers macho-fêmea, macho-macho, e resistores. Uma vez
+instalados, terminamos e testamos extensivamente o código do microcontrolador —
+com exceção da implementação do Bluetooth — e instalamos a montagem na caixa.
 
 Inicialmente, haviamos considerado colar as protoboards (pois não sabíamos se
 apenas uma seria suficiente), usando a fita dupla-face que elas incluem, às
