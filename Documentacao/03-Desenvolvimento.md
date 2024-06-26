@@ -249,4 +249,24 @@ E a segunda parte, resumidamente, assim:
 
 ## Comunicação entre App e Hardware
 
-Descreva como foi o processo de comunicação entre App e arduino/ESP.
+Como indicado acima, a comunicação entre o aplicativo e o microcontrolador foi
+implementada por meio da definição de nove códigos numéricos de oito bits.
+Originalmente, foi considerado definir cada código como uma potência de dois,
+para que fosse possível enviar vários comandos em uma única mensagem de um ou
+mais bytes, usando operações booleanas binárias, como
+`SerialBT.write(MSG_1 | MSG_2 | MSG_3);`, mas, devido ao aumento da complexidade
+que seria necessário no código em blocos do _App Inventor_, essa ideia foi
+descartada. Dos nove comandos, sete são enviados pelo aplicativo, enquanto os
+outros dois são enviados pelo microcontrolador. Em ordem numérica de 1 a 9, eles
+são:
+
+- `PVP` e `PVE`: indicam, respectivamente, que o usuário escolheu jogar contra
+  outro jogador ou contra o computador.
+- `EASY_DIFF`, `NORMAL_DIFF` e `HARD_DIFF`: determinam, respectivamente, que o
+  usuário selecionou a dificuldade fácil, normal, ou difícil.
+- `PLAYER_FIRST` e `CPU_FIRST`: definem, num jogo contra o computador,
+  respectivamente, que o usuário selecionou que o usuário vai jogar primeiro, ou
+  que o computador vai jogar primeiro.
+- `SCORE_P1` e `SCORE_P2`: são as únicas mensagens enviadas pelo
+  microcontrolador, indicando, respectivamente, que o primeiro jogador ganhou
+  partida, ou que o segundo jogador (ou o computador) ganhou uma partida.
