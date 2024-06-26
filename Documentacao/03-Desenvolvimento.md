@@ -126,6 +126,7 @@ relacionados ao hardware, como controle de LEDs, leitura de botões, conexão
 serial via USB e Bluetooth, etc.
 
 A primeira parte pode ser resumida assim:
+
 - Implementação de funções básicas de jogo:
   ```c
   bool check_draw(char board[SIZE][SIZE]);
@@ -141,6 +142,109 @@ A primeira parte pode ser resumida assim:
   static void hard_move(char board[SIZE][SIZE], char player);
   static int minimax(char board[SIZE][SIZE], bool is_maximizing, char player,
          char opponent);
+  ```
+
+E a segunda parte, resumidamente, assim:
+
+- Definição dos pinos GPIO e definições de cores dos LEDs:
+
+  ```c
+  #define BTN1 34
+  #define BTN2 35
+  #define NUM_LEDS 9
+
+  static const int reds[NUM_LEDS] = { 15, 0, 16, 5, 19, 22, 13, 14, 26 };
+  static const int greens[NUM_LEDS] = { 2, 4, 17, 18, 33, 23, 12, 27, 25 };
+
+  typedef enum {
+    BLANK,
+    RED,
+    GREEN
+  } Color;
+  ```
+
+- Definição das funções de controle da matriz de LED, incluindo a implementação
+  do controle de um cursor:
+
+  ```c
+  // Função para definir a cor de um LED específico.
+  void set_led_color(int led_pos, Color color);
+  // Função para exibir o tabuleiro inteiro na matriz de LEDs.
+  void print_led_board(char board[SIZE][SIZE]);
+  // Função para detectar o estado do botão.
+  bool is_button_pressed(int button_pin);
+  // Função para mover o cursor para a próxima posição vazia.
+  void move_cursor(int *cursor_pos, char board[SIZE][SIZE]);
+  // Função para piscar o LED na posição do cursor.
+  void flash_cursor(int cursor_pos, char player);
+  ```
+
+- Implementação das várias animações exibidas na matriz de LEDs.
+- Definição das funções de configuração de jogo, com exceção da configuração
+  pelo aplicativo via bluetooth:
+
+  ```c
+  typedef struct {
+    bool is_set;
+    int game_mode;
+    Difficulty difficulty;
+    enum { PLAYER, CPU } first;
+  } Options;
+
+  typedef enum {
+    DEFAULT_SETTINGS,
+    SERIAL_SETTINGS,
+    BLUETOOTH_SETTINGS
+  } SettingsMode;
+  ```
+
+  ```c
+  static SettingsMode SM;
+
+  // Função para determinar de onde as configurações serão lidas.
+  void set_sm(void);
+  // Função de setup inicial, que depende de onde as configurações serão lidas.
+  void modal_setup(void);
+  // Função que lê as configurações de jogo pela porta serial.
+  static void get_serial_settings(Options *opt);
+  // Função pública (exportada) para abstrair a leitura de configurações.
+  void get_settings(Options *opt);
+  ```
+
+- Implementação da comuinicação via Bluetooth:
+
+  ```c
+  typedef enum {
+    // Tela de seleção de modo de jogo.
+    PVP = 1,
+    PVE = 2,
+
+    // Tela de seleção de dificuldade.
+    EASY_DIFF = 3,
+    NORMAL_DIFF = 4,
+    HARD_DIFF = 5,
+
+    // Tela de escolha de quem vai jogar primeiro.
+    PLAYER_FIRST = 6,
+    CPU_FIRST = 7,
+
+    // Tela de jogo.
+    SCORE_P1 = 8,
+    SCORE_P2 = 9,
+  } BtMsg;
+
+  typedef enum { CONTINUE, RETURN } BtAction;
+  ```
+
+  ```c
+  static Options SettingsBT = { .is_set = false };
+  static BluetoothSerial SerialBT;
+
+  // Função que lê as configurações de jogo enviadas pelo aplicativo.
+  static void get_bt_settings(Options *opt);
+  /* Função usada para verificar se há mensagem Bluetooth recebida enquanto um
+   * jogo está em progresso e, se for o caso, interromper o jogo atual. */
+  BtAction check_and_handle_bt(void);
   ```
 
 ## Comunicação entre App e Hardware
